@@ -6,6 +6,14 @@ const Events = () => {
         console.log("Aqui");
     };
 
+    const renderizeFund = (vl) => {
+        if(vl){
+            return <h1>TESTE TRUE</h1>
+        }else{
+            return <h1>TESTE False</h1>
+        }
+    }
+
   return (
     <div>
         <div>
@@ -14,6 +22,10 @@ const Events = () => {
         <div>
             <button onClick={() => console.log("Cliquei aqui TB")} >Cique Aqui Tambem!</button>
         </div>
+
+        {renderizeFund(true)}
+        {renderizeFund(false)}
+
     </div>
   )
 }
